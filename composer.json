@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twbs/bootstrap": "^3.3",
+        "guzzlehttp/guzzle": "~6.0",
+        "sunra/php-simple-html-dom-parser": "v1.5.0"
+    }
+}
