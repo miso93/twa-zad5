@@ -75,7 +75,7 @@
                 <tr>
                     <td><?php echo $station->company; ?></td>
                     <td><strong><?php echo $station->place; ?></strong><br><?php echo $station->street; ?></td>
-                    <td><img src="http://benzin.sk/<?php echo $station->price_img_url ?>"> €</td>
+                    <td><img src="http://benzin.sk/<?php echo $station->price_img_url ?>" alt="<?php echo $station->company; ?>"> €</td>
                     <td><?php echo $station->updated_at; ?></td>
                 </tr>
             <?php endforeach; ?>
@@ -92,20 +92,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('body').on('hidden.bs.modal', '.modal', function () {
-            $(this).removeData('bs.modal');
-        });
 
-    });
-</script>
-<div class="modal fade" id="edit_modal" tabindex="-1" role="dialog"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content"></div>
-    </div>
-</div>
 </body>
 </html>

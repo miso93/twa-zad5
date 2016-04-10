@@ -75,9 +75,8 @@ function getFillingStationByCityName($cityName, $fuel_id = 2)
         ]
     );
     $body_html = $res->getBody();
-//    dd($res->getHeader('content-type'));
+
     $dom = HtmlDomParser::str_get_html($body_html);
-//    dd($dom->find('#article_text', 0)->innertext);
 
     $pump_list_row1 = $dom->find(".pump_list_row1");
     $pump_list_row2 = $dom->find(".pump_list_row2");
